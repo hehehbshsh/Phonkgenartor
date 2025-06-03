@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Bit Phonk Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>8-Bit Phonk</h1>
+        
+        <div class="controls">
+            <button id="playButton">Play</button>
+            
+            <div class="slider-container">
+                <label for="tempo">BPM: <span id="bpmDisplay">120</span></label>
+                <input type="range" id="tempo" name="tempo" min="60" max="180" value="120">
+            </div>
+        </div>
+
+        <div class="instrument-toggles">
+            <div class="instrument">
+                <input type="checkbox" id="kickToggle" checked>
+                <label for="kickToggle">Kick</label>
+            </div>
+            <div class="instrument">
+                <input type="checkbox" id="hihatToggle" checked>
+                <label for="hihatToggle">Hi-Hat</label>
+            </div>
+            <div class="instrument">
+                <input type="checkbox" id="cowbellToggle" checked>
+                <label for="cowbellToggle">Cowbell</label>
+            </div>
+            <div class="instrument">
+                <input type="checkbox" id="bassToggle" checked>
+                <label for="bassToggle">Bass</label>
+            </div>
+            <div class="instrument">
+                <input type="checkbox" id="vocalToggle" checked>
+                <label for="vocalToggle">Vocal Chop</label>
+            </div>
+        </div>
+
+        <div class="credits">
+            <p>made by Bryce,k</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
